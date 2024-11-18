@@ -33,6 +33,7 @@ class App {
 
     _setupModel() {
         const gltfLoader = new GLTFLoader();
+        // https://sketchfab.com/features/gltf
         const url = '../data/adamHead/adamHead.gltf';
         // const url = '../data/microphone/scene.gltf';
         gltfLoader.load(
