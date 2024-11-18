@@ -93,7 +93,7 @@ class App {
         for(let x=-20; x<=20; x+=1.1) {
             for(let y=-20; y<=20; y+=1.1) {
                 const color = new THREE.Color();
-                color.setHSL(0, 0, 0.1);
+                color.setHSL(0, 0, 0.1); // 색상, 채도, 명도
                 const material = new THREE.MeshStandardMaterial({ color });
                 
                 new Particle(this._scene, geometry, material, x, y);
