@@ -41,8 +41,8 @@ class App {
     _setupBackground() {
         const loader = new THREE.TextureLoader();
         loader.load("../data/cannon.jpeg", texture => {
-            const renderTarget = new THREE.WebGLCubeRenderTarget(texture.image.height);
-            renderTarget.fromEquirectangularTexture(this._renderer, texture);
+            // const renderTarget = new THREE.WebGLCubeRenderTarget(1);
+            // renderTarget.fromEquirectangularTexture(this._renderer, texture);
             this._scene.background = texture;
             this._setupModel();
         });
