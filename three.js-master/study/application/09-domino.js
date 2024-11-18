@@ -76,6 +76,7 @@ class App {
             tmpPos.copy(raycaster.ray.direction);
             tmpPos.multiplyScalar(20);
 
+            // 공이 날아가는 방향, 속도 지정
             body.setLinearVelocity( new Ammo.btVector3( tmpPos.x, tmpPos.y, tmpPos.z ) );
             
             ball.physicsBody = body;            
